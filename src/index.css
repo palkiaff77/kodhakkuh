@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Raleway:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 25% 5%;
+    --foreground: 40 30% 95%;
+    --card: 230 20% 10%;
+    --card-foreground: 40 30% 95%;
+    --popover: 230 20% 10%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 330 60% 65%;
+    --primary-foreground: 230 25% 5%;
+    --secondary: 40 50% 60%;
+    --secondary-foreground: 230 25% 5%;
+    --muted: 230 15% 18%;
+    --muted-foreground: 230 10% 55%;
+    --accent: 260 40% 50%;
+    --accent-foreground: 40 30% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 230 15% 20%;
+    --input: 230 15% 20%;
+    --ring: 330 60% 65%;
+    --radius: 0.75rem;
+    --cosmic-blue: 230 60% 15%;
+    --cosmic-gold: 40 80% 55%;
+    --cosmic-pink: 330 70% 60%;
+    --cosmic-glow: 330 60% 65%;
+    --sidebar-background: 230 25% 8%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 330 60% 65%;
+    --sidebar-primary-foreground: 230 25% 5%;
+    --sidebar-accent: 230 15% 18%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 230 15% 20%;
+    --sidebar-ring: 330 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(330 60% 65% / 0.5), 0 0 40px hsl(330 60% 65% / 0.3);
+  }
+  .text-glow-gold {
+    text-shadow: 0 0 20px hsl(40 80% 55% / 0.5), 0 0 40px hsl(40 80% 55% / 0.3);
+  }
+  .box-glow {
+    box-shadow: 0 0 30px hsl(330 60% 65% / 0.3), 0 0 60px hsl(330 60% 65% / 0.15);
+  }
+  .box-glow-gold {
+    box-shadow: 0 0 30px hsl(40 80% 55% / 0.3), 0 0 60px hsl(40 80% 55% / 0.15);
+  }
+  .glass {
+    background: hsl(230 20% 12% / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(40 30% 95% / 0.1);
+  }
+  .cosmic-gradient {
+    background: radial-gradient(ellipse at center, hsl(260 40% 15%) 0%, hsl(230 25% 5%) 70%);
+  }
+}

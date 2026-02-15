@@ -1,0 +1,17 @@
+export const memoryQuotes = [
+  "The day you walked into my life…",
+  "The smile that ruined my loneliness…",
+  "The distance that couldn't defeat us…",
+  "Every fight that made us stronger…",
+  "The first time you said my name…",
+  "The moment I knew you were the one…",
+  "Your laugh — my favorite sound…",
+  "Our midnight conversations…",
+  "The way you looked at me…",
+  "Every promise we made under the stars…",
+  "The day everything changed…",
+  "You became my forever…",
+  "Through every storm, we held on…",
+  "My heart found its home in you…",
+  "And this is just the beginning…",
+];
